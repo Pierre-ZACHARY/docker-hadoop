@@ -1,4 +1,9 @@
 #!/bin/bash
+apt-get update
+apt-get install wget
+wget --no-check-certificate https://dlcdn.apache.org/pig/pig-0.16.0/pig-0.16.0.tar.gz
+tar xvzf pig-0.16.0.tar.gz
+mv ./pig-0.16.0 /root/pig
 
 namedir=`echo $HDFS_CONF_dfs_namenode_name_dir | perl -pe 's#file://##'`
 if [ ! -d $namedir ]; then

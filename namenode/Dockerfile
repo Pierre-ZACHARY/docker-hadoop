@@ -14,3 +14,5 @@ RUN chmod a+x /run.sh
 EXPOSE 9870
 
 CMD ["/run.sh"]
+
+#RUN export PATH="$PATH:/root/pig/bin"
